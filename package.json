@@ -1,0 +1,28 @@
+{
+  "name": "unique-array-objects",
+  "version": "1.0.0",
+  "description": "Módulo para exclusão de objetos repetidos",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hallss93/unique-array-objects.git"
+  },
+  "keywords": [
+    "array",
+    "obj",
+    "object",
+    "unique",
+    "js",
+    "javascript",
+    "reduce"
+  ],
+  "author": "Hallss <hallss93@hotmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hallss93/unique-array-objects/issues"
+  },
+  "homepage": "https://github.com/hallss93/unique-array-objects#readme"
+}
