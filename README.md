@@ -1,14 +1,17 @@
 # unique-array-objects
 
-> Módulo para exclusão de objetos repetidos. O módulo considera key e values idênticos e a estrutura idêntica.
+> Module for deleting repeated objects. The module considers romantic key and values ​​and the visual structure.
 
-## Como iniciar
+## How to start
 
 _Start:_
 
-1. Instale a dependência com `npm i --save unique-array-objects`
-2. Importe a biblioteca:
+1. Install the dependency with `npm i --save unique-array-objects`
+2. Import the library:
 ````javascript
+/*
+* Use as function
+*/
 import uab from 'unique-array-objects';
 var array = [
     {
@@ -30,10 +33,35 @@ var array = [
 ]
 console.log(uab(array)
 /**
- * RETORNARÁ:
+ * WILL RETURN:
  * 
  * 0 => id: 1, nome: 'Jhon'
  * 1 => id: 2, nome: 'Jhon'
  * 2 => id: 1, nome: 'Jhon', altura: 1.71
  */
-        ```
+
+
+/*
+* Use as middleware on Node
+*/
+router.get('/test', require('unique-array-objects/middle'), function (req, res) {
+	var array = [{
+			id: 1,
+			nome: 'Jhon'
+		},
+		{
+			id: 2,
+			nome: 'Jhon'
+		}, {
+			id: 1,
+			nome: 'Jhon'
+		},
+		{
+			id: 1,
+			nome: 'Jhon',
+			altura: 1.71
+		}
+	]
+	res.send(req.uac(array))
+})
+```
