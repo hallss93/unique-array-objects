@@ -31,7 +31,7 @@ var array = [
         altura: 1.71
     }
 ]
-console.log(uab(array)
+console.log(uab(array);
 /**
  * WILL RETURN:
  * 
@@ -41,6 +41,30 @@ console.log(uab(array)
  */
 
 
+/*
+* Use as Array.prototype
+*/
+import uab from 'unique-array-objects/prototype';
+Array.prototype.remove = uab
+var array = [
+    {
+        id: 1, 
+        nome: 'Jhon'
+    },
+    { 
+        id: 2, 
+        nome: 'Jhon'
+    }, {
+        id: 1, 
+        nome: 'Jhon'
+    },
+    { 
+        id: 1, 
+        nome: 'Jhon',
+        altura: 1.71
+    }
+]
+console.log(array.remove())
 /*
 * Use as middleware on Node
 */
@@ -64,4 +88,3 @@ router.get('/test', require('unique-array-objects/middle'), function (req, res) 
 	]
 	res.send(req.uac(array))
 })
-```

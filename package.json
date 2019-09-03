@@ -1,6 +1,6 @@
 {
   "name": "unique-array-objects",
-  "version": "2.0.2",
+  "version": "2.1.0",
   "description": "Module for deleting repeated objects. The module considers romantic key and values ​​and the visual structure.",
   "main": "index.js",
   "scripts": {
@@ -15,10 +15,10 @@
     "obj",
     "object",
     "unique",
-	"express",
-	"middleware",
-	"node",
-	"emca",
+    "express",
+    "middleware",
+    "node",
+    "emca",
     "js",
     "javascript",
     "reduce"
